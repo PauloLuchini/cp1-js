@@ -8,17 +8,41 @@
     <script src="./Ex2.js" defer></script>
 </head>
 <body>
+    <div>
+        <table border="1" cellpadding = "3"  cellspacing="3" id="idTable">
+            <tr>
+                <th>Descrição <input type="text" id="inputDesc"></th>
+                <th>Autor <input type="text" id="inputAutor"></th>
+            </tr>
+            <tr>
+                <th>Departamento <input type="text" id="inputDep"></th>
+                <th>Importância <input type="number" id="inputImp"></th>
+            </tr>
+        </table>
+    </div>
+    
+    <div style="display: inline-block;">
+        <input type="button" value="Add nova Tarefa" id="btnTarefa">
+        <button id="btnDelTarefa">Delete Tarefa</button>
+    </div>
+    
 
-    <table border="1" cellpadding = "3"  cellspacing="3" id="idTable">
-        <tr>
-            <th>Descrição <input type="text" id="inputDesc"></th>
-            <th>Autor <input type="text" id="inputAutor"></th>
-        </tr>
-        <tr>
-            <th>Departamento <input type="text" id="inputDep"></th>
-            <th>Importância <input type="text" id="Imp"></th>
-        </tr>
-    </table>
+    
+    <div id="div-tarefas">
+        <ul id="lista-desc" style="display: inline-block;">
+            <h3>Descrição</h3>
+
+        </ul>
+        <ul id = "lista-autor" style="display: inline-block;">
+            <h3>Autor</h3>
+        </ul>
+        <ul id = "lista-dep" style="display: inline-block;">
+            <h3>Departamento</h3>
+        </ul>
+        <ul id = "lista-Imp" style="display: inline-block;">
+            <h3>Importância</h3>
+        </ul>
+    </div>
 
 </body>
 </html>
