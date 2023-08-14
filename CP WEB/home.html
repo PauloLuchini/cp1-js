@@ -13,23 +13,26 @@
             <tr>
                 <th>Descrição <input type="text" id="inputDesc"></th>
                 <th>Autor <input type="text" id="inputAutor"></th>
+                <th>Duração <input type="text" id="inputDuracao"></th>
             </tr>
             <tr>
                 <th>Departamento <input type="text" id="inputDep"></th>
                 <th>Importância <input type="number" id="inputImp"></th>
+                <th>Valor <input type="number" id="inputValor"></th>
             </tr>
         </table>
     </div>
     
     <div style="display: inline-block;">
         <input type="button" value="Add nova Tarefa" id="btnTarefa">
-        <button id="btnDelTarefa">Delete Tarefa</button>
     </div>
-    
+    <div style="display: inline-block;">
+        <button id="btnListaPorImportancia">Criar Lista por Importância</button>
+    </div>
 
     
     <div id="div-tarefas">
-        <ul id="lista-desc" style="display: inline-block;">
+        <ul id="lista-desc" style="display: inline-block; ">
             <h3>Descrição</h3>
 
         </ul>
@@ -41,6 +44,17 @@
         </ul>
         <ul id = "lista-Imp" style="display: inline-block;">
             <h3>Importância</h3>
+        </ul>
+        <ul id="lista-valor" style="display: inline-block;">
+            <h3>Valor</h3>
+        </ul>
+        <ul id="lista-duracao" style="display: inline-block;">
+            <h3>Duração</h3>
+        </ul>
+    </div>
+    <div id="div-lista-importancia">
+        <ul id="lista-desc-por-importancia" style="display: inline-block;">
+            <h3>Descrições por Ordem de Importância</h3>
         </ul>
     </div>
 
